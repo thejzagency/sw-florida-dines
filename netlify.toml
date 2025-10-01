@@ -1,0 +1,17 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[context.production.environment]
+  VITE_SUPABASE_URL = "https://mdodphmrgzexowgqbqto.supabase.co"
+  VITE_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1kb2RwaG1yZ3pleG93Z3FicXRvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg1NTk1OTgsImV4cCI6MjA3NDEzNTU5OH0.ib1lV5Pv1cau3dLBTjXVAkz5ndOsiNGJWK8QBoAu3Oo"
+  VITE_HUNTER_API_KEY = "4571bddc4d92dbfb6d5c910f4b40de70b6465fb6"
+  SITE_URL = "https://swfldines.com"
